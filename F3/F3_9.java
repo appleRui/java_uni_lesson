@@ -12,10 +12,14 @@ public class F3_9{
         for(Field field:fields){
             try{
                 String fName = field.getName();
+                System.out.println(fName);
                 PropertyDescriptor pd = new PropertyDescriptor(fName, clazz);
+                System.out.println(pd);
                 Method method = pd.getReadMethod();
+                System.out.println(method);
                 Object object = method.invoke(enrollee);
-                System.out.print(object.toString()+ " ");
+                System.out.println(object);
+                System.out.println(object.toString());
             }catch(IntrospectionException | IllegalArgumentException | IllegalAccessException | InvocationTargetException e){
             e.printStackTrace();
         }
