@@ -6,26 +6,20 @@ public class F3_4{
     public static void main(String[] args){
         String pathName = "data2.csv";
         List<String> list = CsvUtils.readAllLines(Paths.get(pathName));
-        List<Enrollee> enrolleeList = toEnrolleeList(list.subList(1, list.size()));
+        System.out.println(list);
+        List<Enrollee> enrolleeList = toEnrolleeList(list.subList(1,list.size())) ;
 
-        // System.out.println(list);
-        System.out.println(enrolleeList);
 
-        for (Enrollee enrollee:enrolleeList){
-            System.out.print(enrollee.getId() + "" + enrollee.getName());
-            System.out.println("" + enrollee.getScore());
+        for(Enrollee enrollee:enrolleeList){
+            System.out.print(enrollee.getId()+ "" + enrollee.getName());
+            System.out.println(""+enrollee.getScore());
         }
     }
 
     public static List<Enrollee> toEnrolleeList(List<String> list){
         List<Enrollee> enrolleeList = new ArrayList<Enrollee>();
-
-        System.out.println(enrolleeList);
-
         for(String line:list){
             enrolleeList.add(newEnrollee(line));
-            System.out.println(enrolleeList);
-
         }
         return enrolleeList;
     }
