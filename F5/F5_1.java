@@ -1,13 +1,13 @@
 public class F5_1{
-    public static void main(Sring[] args){
-        EnrolleeLocator locator = new Enrolee;
-        locator.add(new Enrolee("00AJ00","Â∞èÊø±",70);
-        locator.add(new Enrolee("00AJ99","È´òÈáé",90);
-    }
+    public static void main(String[] args){
+        EnrolleeLocator locator = new EnrolleeLocator();
+        locator.add(new Enrollee("00AJ00","è¨‡_",70));
+        locator.add(new Enrollee("00AJ99","çÇñÏ",90));
 
-    for(Enrolee enrolee:locator){
+    for(Enrollee enrolee:locator){
         System.out.print(enrolee.getId() + "");
         System.out.print(enrolee.getName() + "");
         System.out.println(enrolee.getScore());
+      }
     }
 }
