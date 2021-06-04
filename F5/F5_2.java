@@ -21,3 +21,6 @@ public class F5_2{
         }
     }
 }
+
+// javac -cp .:tdu-tool.jar:yasson-1.0.3.jar:javax.json-1.1.4.jar:javax.json.bind-api-1.0.jar F5_2.java
+// java -cp .:tdu-tool.jar:yasson-1.0.3.jar:javax.json-1.1.4.jar:javax.json.bind-api-1.0.jar F5_2
