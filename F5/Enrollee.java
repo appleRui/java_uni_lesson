@@ -1,6 +1,11 @@
+import javax.json.bind.annotation.JsonbProperty;
+
 public class Enrollee{
+    @JsonbProperty(value="id")
     private String id;
+    @JsonbProperty(value="name")
     private String name;
+    @JsonbProperty(value="score")
     private int score;
 
     public Enrollee(){
