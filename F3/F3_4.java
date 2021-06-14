@@ -6,7 +6,6 @@ public class F3_4{
     public static void main(String[] args){
         String pathName = "data2.csv";
         List<String> list = CsvUtils.readAllLines(Paths.get(pathName));
-        System.out.println(list);
         List<Enrollee> enrolleeList = toEnrolleeList(list.subList(1,list.size())) ;
 
 
